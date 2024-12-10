@@ -5,7 +5,7 @@ atributo:Valor;
 atributo-de-mas-dos-palabras: Otro-valor;} */
 
 /* las @import son malas práctica porque son bloqueantes a la hora de que el navegador lee esta instrucción */
-/* @import url("otra-hoja.css"); */
+@import url("otra-hoja.css");
 
 
 h1{
