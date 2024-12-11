@@ -1,0 +1,61 @@
+/* Estilos de la Fuente
+  font-famili
+  font-size
+  font-weight
+  font-style
+  font-variant
+  line.height
+  font
+  */
+
+  .font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 2; 
+    font: italic small-caps bold 24px / 1.5 monospace;
+  }
+
+  /* 
+  Formato woff o woff2 - Web Open Font Format
+  
+  font-display:
+  auto - permite que el navegador utilice el método predeterminado que suele ser block 
+  block - oculta brevemente el texto hasta que la fuente haya sido descargada por completo
+  swap - indica al navegador que utilice la fuente alternativa para mostrar el texto hasta que la fuente personalizada se haya cargado por completo
+  fallback - es una mezcla de auto y swap
+  optional -ocultará el texto, luego lo cargará con la fuente alternativa y finalmente aplicará la fuente personalizada.
+  */
+
+  @font-face {
+    font-family: "chalet";
+    src: url("../Assest/Chaletliness.otf") format("woff");
+    font-display: swap;
+  /*
+    src: url("../Assest/Chaletliness.otf" format ("otf"), url("../Assest/Chaletliness.otf2")format (otf2);
+  */
+  }
+
+  .chalet{
+    font-family: "chalet", sans-serif;
+    font-size: 2rem;
+  }
+
+  @font-face {
+    font-family: "pecita";
+    src: url("../Assest/Pecita.otf") format("woff");
+    font-display: swap;
+  }
+
+  .pecita{
+    font-family: "pecita", cursive;
+    font-size: 2rem;
+  }
+
+  .raleway{ 
+    font-family:"raleway", sans-serif;
+    font-size: 2rem;
+  } 
